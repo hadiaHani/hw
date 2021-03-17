@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#B33BE6"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:id="@+id/name"
+        android:background="#fff"
+        android:hint="Name"
+        android:layout_margin="13dp"
+        android:padding="13dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/number"
+        android:background="#fff"
+        android:layout_margin="13dp"
+        android:padding="13dp"
+        android:hint="Phone Number "
+        android:inputType="number"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/address"
+        android:background="#fff"
+        android:layout_margin="13dp"
+        android:padding="13dp"
+        android:hint="Address "
+        android:inputType="text"
+        />
+
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#93D5D4"
+        android:onClick="saveToFirebase"
+        android:padding="10dp"
+        android:text="Save"
+        android:textSize="20sp" />
+
+    <ListView
+    android:id="@+id/lv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="13dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="5dp"
+    android:textSize="13sp"
+    android:textColor="#fff">
+</ListView>
+</LinearLayout>
